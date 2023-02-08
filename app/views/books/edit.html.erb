@@ -1,5 +1,11 @@
 <h1>Editing</h1>
-
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>errors prohibited this book from being saved:
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message%></li>
+    <% end %> 
+<% end %>
 <%= form_with model:@book, url: "/books/#{@book.id}",method: :patch do |f| %>
 
 <h4>Title</h4>
