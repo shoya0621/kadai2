@@ -17,6 +17,7 @@
 body {
   font-size:13px;
   margin:33px;
+  line-height: 18px;
 }
  
 p {
@@ -25,3 +26,27 @@ p {
   margin:33px;
 }
 
+.notice {
+  color:green;
+}
+
+.warning {
+  color :red;
+}
+
+.field {
+  display: block;
+}
+
+.action {
+  display: block;
+  margin-left:0px;
+}
+
+label {
+  display: block;
+}
+
+div {
+  margin-bottom: 10px
+}
